@@ -8,7 +8,7 @@ The project is built with Next.js and is intended to serve as the foundation for
 
 TSC follows a developer-first approach focused on technical quality, precise engineering, thoughtful product design, and reusable systems.
 
-The visual and technical identity of the company is inspired by modern technology companies such as Vercel, with an emphasis on simplicity, strong typography, minimal interfaces, and a design-system-driven architecture.
+The visual and technical identity of the company is inspired by modern technology companies, with an emphasis on simplicity, strong typography, minimal interfaces, and a design-system-driven architecture.
 
 The goal is not to create a conventional software agency website, but a technology brand and platform that can evolve into a broader ecosystem of products, tools, and services.
 
