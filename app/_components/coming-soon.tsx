@@ -1,4 +1,7 @@
-export default function ComingSoon() {
+import { getTranslations } from 'next-intl/server';
+
+export default async function ComingSoon() {
+    const t = await getTranslations('HomePage.ComingSoon');
     return (
         <div
             style={{
@@ -116,7 +119,7 @@ export default function ComingSoon() {
                         animation: 'pulse 2s ease-in-out infinite',
                     }}
                 />
-                LIVE SOON
+                {t('status')}
             </div>
 
             {/* Main content */}
@@ -146,9 +149,9 @@ export default function ComingSoon() {
                             margin: 0,
                         }}
                     >
-                        SOMETHING
+                        {t('title')}
                         <br />
-                        <span style={{ color: '#2e2e2e' }}>IS COMING</span>
+                        <span style={{ color: '#2e2e2e' }}>{t('subtitle')}</span>
                     </h1>
                 </div>
 
@@ -166,7 +169,7 @@ export default function ComingSoon() {
                         textTransform: 'uppercase',
                     }}
                 >
-                    We are building something you haven&apos;t seen before.
+                    {t('description')}
 
                 </p>
             </div>
@@ -188,7 +191,9 @@ export default function ComingSoon() {
                 }}
             >
                 <span>© 2026 The Streeve Collective</span>
-                <span>Privacy · Terms</span>
+                <span>
+                    <a href="/privacy">{t('footer.privacy')}</a> · <a href="/terms">{t('footer.terms')}</a>
+                </span>
             </div>
 
             <style>{`

@@ -1,0 +1,15 @@
+
+{
+  "HomePage": {
+    "ComingSoon": {
+      "title": "SOMETHING",
+      "subtitle": "IS COMING",
+      "description": "We are building something you haven't seen before.",
+      "status": "LIVE SOON",
+      "footer": {
+        "privacy": "Privacy",
+        "terms": "Terms"
+      }
+    }
+  }
+}
