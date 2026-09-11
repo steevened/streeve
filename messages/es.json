@@ -1,0 +1,15 @@
+
+{
+  "HomePage": {
+    "ComingSoon": {
+      "title": "ALGO GRANDE",
+      "subtitle": "ESTÁ POR LLEGAR",
+      "description": "Estamos construyendo algo que no has visto antes.",
+      "status": "PRÓXIMAMENTE",
+      "footer": {
+        "privacy": "Privacidad",
+        "terms": "Términos"
+      }
+    }
+  }
+}
