@@ -45,11 +45,3 @@ The primary visual language is monochromatic, using black and white as the found
 The project follows the conventions provided by Next.js and is structured to keep application concerns, UI components, and shared design primitives separated.
 
 The architecture is intended to evolve as the project grows, with reusable components and design-system primitives taking precedence over page-specific implementations.
-
-```text
-src/
-  app/
-  components/
-  ...
-public/
-  ...
