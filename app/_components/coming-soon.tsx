@@ -1,18 +1,4 @@
-"use client"
-
-import { useState, useRef } from 'react'
-
 export default function ComingSoon() {
-  const [email, setEmail] = useState('')
-  const [submitted, setSubmitted] = useState(false)
-  const [focused, setFocused] = useState(false)
-  const inputRef = useRef<HTMLInputElement>(null)
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (email.includes('@')) setSubmitted(true)
-  }
-
   return (
     <div
       style={{
@@ -150,85 +136,6 @@ export default function ComingSoon() {
           <br />
           Be the first to know when we launch.
         </p>
-
-        {/* Email form */}
-        {!submitted ? (
-          <form
-            onSubmit={handleSubmit}
-            style={{
-              display: 'flex',
-              gap: '0',
-              width: '100%',
-              maxWidth: '480px',
-            }}
-          >
-            <input
-              ref={inputRef}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setFocused(true)}
-              onBlur={() => setFocused(false)}
-              placeholder="your@email.com"
-              required
-              style={{
-                flex: 1,
-                backgroundColor: 'transparent',
-                border: `1px solid ${focused ? '#444' : '#1e1e1e'}`,
-                borderRight: 'none',
-                color: '#e8e4dc',
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: '0.8rem',
-                letterSpacing: '0.05em',
-                padding: '0.9rem 1.2rem',
-                outline: 'none',
-                transition: 'border-color 0.2s',
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                backgroundColor: '#e8e4dc',
-                color: '#080808',
-                border: '1px solid #e8e4dc',
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: '0.7rem',
-                letterSpacing: '0.18em',
-                textTransform: 'uppercase',
-                padding: '0.9rem 1.4rem',
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-                transition: 'background-color 0.2s, color 0.2s',
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget
-                el.style.backgroundColor = 'transparent'
-                el.style.color = '#e8e4dc'
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget
-                el.style.backgroundColor = '#e8e4dc'
-                el.style.color = '#080808'
-              }}
-            >
-              Notify me
-            </button>
-          </form>
-        ) : (
-          <div
-            style={{
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '0.75rem',
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: '#555',
-              border: '1px solid #1e1e1e',
-              padding: '0.9rem 2rem',
-            }}
-          >
-            ✓ &nbsp;You&apos;re on the list
-          </div>
-        )}
 
         {/* Footer note */}
         <p
