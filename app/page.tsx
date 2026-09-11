@@ -1,7 +1,7 @@
 import ComingSoon from "./_components/coming-soon";
 
 export const metadata = {
-  title: "The Streeve collective - Coming Soon",
+  title: "The Streeve Collective - Coming Soon",
   description: "We're working on something amazing. Stay tuned!",
 };
 
