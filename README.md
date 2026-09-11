@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Streeve Collective
 
-## Getting Started
+The Streeve Collective (TSC) is a software development company focused on building modern digital products, developer tools, and scalable software experiences.
 
-First, run the development server:
+The project is built with Next.js and is intended to serve as the foundation for the company's digital presence and future product ecosystem.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Vision
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+TSC follows a developer-first approach focused on technical quality, precise engineering, thoughtful product design, and reusable systems.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The visual and technical identity of the company is inspired by modern technology companies such as Vercel, with an emphasis on simplicity, strong typography, minimal interfaces, and a design-system-driven architecture.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The goal is not to create a conventional software agency website, but a technology brand and platform that can evolve into a broader ecosystem of products, tools, and services.
 
-## Learn More
+## Technology
 
-To learn more about Next.js, take a look at the following resources:
+The project is built using Next.js with React and TypeScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js provides the application framework, routing, rendering capabilities, and the foundation for future server-side and client-side functionality.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+TypeScript is used throughout the project to provide type safety and maintainability.
 
-## Deploy on Vercel
+The UI is designed around a minimal, modern design system with reusable components and consistent visual primitives.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design Direction
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The TSC visual identity is based on three principles:
+
+Technical.
+
+Precise.
+
+Intentional.
+
+The interface should remain minimal and functional while maintaining a strong visual identity.
+
+The design system should prioritize typography, spacing, geometry, contrast, responsive behavior, and reusable components instead of excessive decoration.
+
+The primary brand mark is based on the letters TSC, combined into a single geometric symbol. The intention is to create a recognizable mark that works independently from the full company name and remains identifiable at small sizes such as favicons and application icons.
+
+The primary visual language is monochromatic, using black and white as the foundation of the identity.
+
+## Project Structure
+
+The project follows the conventions provided by Next.js and is structured to keep application concerns, UI components, and shared design primitives separated.
+
+The architecture is intended to evolve as the project grows, with reusable components and design-system primitives taking precedence over page-specific implementations.
